@@ -29,7 +29,7 @@ a:hover {
   min-height: 30px;
   padding: 10px;
   position: fixed;
-  z-index: +1; /* Puts nav ontop of other elments like the timeline and profile pic */
+  z-index: +1; /* Puts nav ontop of other elments like the timeline and profile pic https://stackoverflow.com/questions/5311706/position-fixed-content-overlapping-problem/64449480#64449480*/
   text-align: center;
 }
 .nav {
@@ -58,7 +58,7 @@ a:hover {
 
 header {
   text-align: center;
-  background: url('images/abstract_header.jpg') no-repeat top center ;
+  background: url('images/abstract_header.jpg') no-repeat top center ; /* Header image from https://www.freewebheaders.com/abstract/artistic-abstract-hero-headers/ */
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -70,7 +70,7 @@ header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 55%;
   border: 3px solid white;
   transition: all .5s;
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
@@ -79,6 +79,7 @@ header .profile-image {
 
 header .profile-image:hover {
   transform: scale(1.3) rotate(7deg);
+  /* Black and white image manipulation from https://www.w3schools.com/howto/howto_css_image_bw.asp */
   -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
   filter: grayscale(0%); 
   border: 3px solid #181541;
@@ -166,6 +167,7 @@ header .profile-image:hover {
   border-color: #181541;
 }
 
+/* Vertical line from https://www.w3schools.com/howto/howto_css_vertical_line.asp */
 .timeline {
   border-left: 6px solid #181541;
   height: 925px;
@@ -174,6 +176,25 @@ header .profile-image:hover {
   margin-left: -3px;
   top: 575px;
 }
+
+#contact_me{
+  background: url('images/contact.jpg') no-repeat top center ;/* Image from https://pixabay.com/illustrations/letters-envelope-news-message-5614727/ */
+  height: 225px;
+}
+
+.contact_button{
+width: 100px;
+background: #131135;
+min-height: 30px;
+padding: 10px;
+margin-left: 155px;
+text-align: center;
+display: flex;
+justify-content: space-around;
+font-weight: 700;
+list-style-type: none;
+}
+
 ul.skills {
   padding: 0;
   text-align: center;
